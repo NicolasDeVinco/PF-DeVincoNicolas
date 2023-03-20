@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encargos de cuadros a pedido de Berliner Arq & Art</title>
+    <meta name="description" content="Aquí podras encargar cuadros de Arte y Arquitectura para tu hogar/empresa/espacio">
+    <meta name="keywords" content="Encargos, Lucia Berliner, cuadros de arte, cuadros de diseño, arquitectura">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="shortcut icon" href="../images/flavicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Raleway:wght@100;200&family=Roboto+Condensed:wght@300;400&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;1,200;1,400;1,600&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="pages__header--container">
+            <a href="../index.html" class="header__logo"><img src="../images/logolu.jpeg" alt="Logo Berliner" class="header__logo--img"></a>
+           
+            <nav id="nav" class="main-nav" >
+                <div class="nav-links" >
+                    <a class="link-item" href="../index.html">Inicio</a>
+                    <a class="link-item" href="./acerca_de_mi.html">Acerca de Mí</a>
+                    <a class="link-item" href="./obras.html">Obras</a>
+                    <a class="link-item" href="./encargos.html">Encargos</a>
+                    <a class="link-item" href="./inicio_sesion.html"><img src="../images/user.svg" alt="icono usuario inicio sesion" class="pages__nav--user"></a>
+                    <a class="link-item" href="./carrito.html"><img src="../images/carrito.svg" alt="icono carrito compra" class="pages__nav--carrito"></a>
+                </div>
+            </nav>
+            <button id="button-menu" class="button-menu" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+    </header>
+
+
+    <div class="calculo__container"> 
+        <form class="calculo__form" action="./encargos.html #resultado" method="get">
+            <h2 class="calculo__form--title">Calculá el valor aproximado de tu pedido</h2>
+            <div class="calculo__form--datos">
+                <label class="label__tamano" for="tamano">ELEGÍ UN <B>TAMAÑO</B>
+                    <select name="tamano" id="tamano">
+                    <option value="40x40">40x40cm</option>
+                    <option value="50x30">50x30cm</option>
+                    <option value="1x1">1x1m</option>
+                    <option value="1,20x70">1,20x70cm</option>
+                    <option value="1,50x1">1,50x1m</option>
+                    <option value="2,10x1,20">2,10x1,20m</option>
+                    </select> 
+                </label>
+                <label class="label__sentido" for="sentido">ELEGÍ UN <b>SENTIDO</b>
+                    <select name="sentido" id="sentido">
+                    <option value="horizontal">Horizontal</option>
+                    <option value="vertical">Vertical</option>
+                    </select>
+                </label>
+                
+                <label class="label__bastidor" for="bastidor">ELEGÍ UN <b>BASTIDOR</b>
+                    <select name="bastidor" id="bastidor">
+                    <option value="2,5cm">2,5cm ancho</option>
+                    <option value="5cm">5cm ancho</option>
+                    </select> 
+                </label>
+                <label class="label__diseno" for="diseno">ELEGÍ UN <B>DISEÑO</b>
+                    <select name="diseno" id="diseno">
+                        <option value="abstracto">Abstracto</option>
+                        <option value="figurativo">Figurativo</option>
+                    </select>
+                </label>
+            </div>
+                
+            <div class="submit__container">
+                <input  class="submit__azul" type="submit" value="Calcular" id="resultado">
+            </div>
+                <h3 class="precio_final">Precio aproximado: </h3>
+          
+        </form>
+         
+    </div>
+
+         
+    <div class="encargos_container">
+        <h1 class="encargos_title">Completá tus datos de contacto</h1>
+        <p class="encargos_paragraph">Te aconsejamos que leas previamente las aclaraciones de compra y envío, abajo mencionadas</p>
+    
+        <form action="./carrito.html" class="encargos_form" method="post" enctype="multipart/form-data">
+            <div class="encargos_form_elementos">
+                <h2 class="encargos_form_title">Nos estaremos contactando contigo</h2>
+
+                <input type="text" class="encargos_form_input" placeholder="Nombre:" name="name" required>
+                <input type="text" class="encargos_form_input" placeholder="Apellido:"name="surname" required>        
+                <input type="text"class="encargos_form_input" placeholder="Fecha nacimiento (DD/MM/YYYY)"
+                    onfocus="(this.type='date')" required>
+                <input type="text" class="encargos_form_input" placeholder="Mail:" name="email" required>
+                <input type="text" class="encargos_form_input" placeholder="Cel: (01135747574)"name="celular"required>
+                <input type="text" class="encargos_form_input" placeholder="Domicilio:" name="calle"required>
+                <input type="text" class="encargos_form_input" placeholder="Altura:" name="altura"required>
+                <input type="text" class="encargos_form_input" placeholder="Piso / dpto:" name="piso">
+                <input type="text" class="encargos_form_input" placeholder="Código Postal:" name="cp">
+                <textarea class="encargos_form_input encargos_form_input_mensaje" placeholder="Indicá con lujo de detalles como quisieras que quede tu cuadro (colores, agregados, etc)"name="message"required></textarea>
+                <p class="encargos_dibujo"> Agregá un dibujo/foto/boceto que ayude a entender tu idea</p> <input type="file" name="archivo" class="form_file">
+                <input class="submit__azul" type="submit" value="Realizar pedido">
+            </div>
+        </form>
+    </div>
+        
+         
+    <div class="aclaraciones_container">
+        <h2 class="aclaraciones_title">Lea atentamente las aclaraciones</h2>
+        <div class="aclaraciones_cuadro">
+            <p class="aclaraciones_paragraph">*No se aceptan cambios <br>*El envío se abona aparte <br>*Enviamos solo a CABA y Gran Buenos Aires<br>*El diseño dura aproximadamente 1 mes<br>*Luego de finalizado el diseño, seras contactado para arreglar el envío<br>*Hoy pagarás el 10% <br>*A contraentrega del cuadro abonarás el resto <br>*Enviamos solo a CABA y Gran Buenos Aires<br>*El diseño dura aproximadamente 1 mes<br>*Luego de finalizado el diseño, seras contactado para arreglar el envío<br>*No se aceptan cambios <br>*El envío se abona aparte <br>*Enviamos solo a CABA y Gran Buenos Aires<br>*El diseño dura aproximadamente 1 mes<br>*Luego de finalizado el diseño, seras contactado para arreglar el envío<br></p>
+        </div>
+    </div>
+
+    <div class="chatbot">
+        <a href="https://www.instagram.com/berliner.arq.art/"><img src="../images/iconowts.png" alt="whastapp chat icono" class="whatsapp_bot" width="60px"></a>
+    </div>
+    
+
+        
+    <footer class="footer__container">
+        <div class="footer__info">
+            <nav class="nav__footer">
+                <h2 class="footer__title">Arte y Arquitectura</h2>
+                
+                <ul class="nav__footer--items">
+                    <li class="nav__footer--item">
+                        <a href="../index.html" class="nav__footer--texto">Inicio</a>
+                    </li>
+                    <li class="nav__footer--item">
+                        <a href="./acerca_de_mi.html" class="nav__footer--texto">Acerca de mí</a>
+                    </li>
+                    <li class="nav__footer--item">
+                        <a href="./obras.html" class="nav__footer--texto">Obras</a>
+                    </li>
+                    <li class="nav__footer--item">
+                        <a href="./encargos.html" class="nav__footer--texto">Encargos</a>
+                    </li>
+                    <li class="nav__footer--item">
+                        <a href="./contacto.html" class="nav__footer--texto">Contacto</a>
+                    </li>
+                    <li class="nav__footer--item">
+                        <a href="./inicio_sesion.html"><img src="../images/user.svg" alt="icono usuario inicio sesion" class="nav__footer--user"></a>
+                    </li>
+                    <li class="nav__footer--item"> 
+                        <a href="./carrito.html"><img src="../images/carrito.svg" alt="icono carrito compra" class="nav__footer--carrito"></a>
+                    </li>    
+                </ul>
+            </nav>
+            <div class="footer__redes">
+                <div class="footer__redes--sociales">
+                    <h4 class="footer__encontrame">Podes encontrarme en:</h4>
+                    <a href="https://www.instagram.com/berliner.arq.art/"> <img src="../images/instagram.png" alt="logo instragram" class="footer__redes--img"></a>
+                    <a href="https://www.linkedin.com/in/berliner-lucia-007319102/?originalSubdomain=ar"><img src="../images/linkedin.png" alt="logo linkedin" class="footer__redes--img"></a> 
+                </div>
+            </div>
+        </div>
+            
+        <div class="footer__copy">
+            <h6 class="footer__copyright">Derechos Reservados &copy; NDV-2023</h6>
+        </div>
+            
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="../funciones.js"></script>
+</body>
+
+</html>

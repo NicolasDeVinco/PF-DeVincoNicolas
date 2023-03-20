@@ -1,0 +1,212 @@
+
+
+
+/* ------------BODY------------------------------------------------ */
+
+body {
+    font-family: 'Raleway', sans-serif;
+
+        .whatsapp_bot {
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+    }
+}
+
+
+
+/* ------------INDEX HERO CONTAINER------------------------------------------------ */
+
+
+.hero__container {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    max-height: 200px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+ }
+
+.hero__container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient( 180deg, #0000008c 0%, #0000008c 100% ), url(../images/FondoOK.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 0 100%);
+    z-index: -1;
+}
+
+
+
+/*------------------------INDEX HEADER  ------------------------------------------------*/
+
+.header__container { 
+    margin-top: 40px;
+    margin-right: 10px;
+    justify-self: flex-end;
+}
+
+.hero__title--texto {
+    margin: 0 0 75px 40px;
+    text-align: left;
+    padding-left: 0;
+    font-size: 6vw;
+    padding-top: 0;
+    letter-spacing: 5px;
+}
+
+
+
+/* ---------------------------- RESTO PAGINAS: HEADER, LOGO Y NAVEGACION ---------------------------- */
+
+.pages__header--container {
+    @include grid-center;
+    background-image: url(../images/fondonav.jpeg);
+    grid-template-columns: 20% 80%;
+    border-bottom: black solid;
+    grid-template-areas: "logo navegacion";
+
+
+        .header__logo {
+            grid-area: logo;
+        }
+
+                .header__logo--img {
+                    width: 100px;
+                    margin: 5px 0  5px 250px;
+                    border: $primary_color solid;
+                    animation-name: logo__desktop;
+                    animation-iteration-count: 1;
+                    animation-timing-function: linear;
+                    animation-duration: 2s;
+                    animation-delay: 500ms;
+                    animation-fill-mode: forwards;
+                }
+
+}
+
+
+
+/* ---------------------------- NAVEGACION --------------------------------------------------------*/
+
+
+.main-nav {
+    grid-area: navegacion;
+    display: block;
+    margin: auto;
+    margin-right: 0px;
+    
+         a {
+            font-size: 20px;
+            font-weight: bold;
+            color: $primary_color;
+            text-decoration: none;
+            list-style: none;
+            margin-right: 30px;            
+    
+                &:hover {
+                    color: rgb(177, 175, 175);
+                }
+
+                img:hover {
+                    background-color: rgb(177, 175, 175);
+                    border-radius: 10%;
+                }
+        }
+}
+
+
+.button-menu {
+    display: none;
+}
+
+
+
+/* ---------------------------- FOOTER ---------------------------- ----------------------------  */
+
+.footer__container {
+    background-color: #4c4c4d;
+    border-top: grey solid;
+
+
+        .footer__info {
+            @include grid-center;
+            grid-template-columns: 6fr 6fr;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 20px;
+
+                .footer__title {
+                    font-size: 30px;
+                    margin-top: 10px;
+                    margin-bottom: 50px;
+                    color: rgb(145, 143, 143);
+                    font-weight: 1000;
+                    margin-left: 20px;
+                }
+
+                .nav__footer--items {
+                    display: grid;
+                    grid-auto-flow: column;
+                    grid-auto-columns: max-content;
+                    list-style: none;
+                    text-decoration: none;
+                    border: none;
+                    background: none;
+                    gap: 1.5em;
+                    font-size: 20px;
+                    
+                }
+
+                .nav__footer--texto {
+                    text-decoration: none;
+                    color: $primary_color;
+                }
+
+                .footer__encontrame {               
+                    font-weight: 100; 
+                    font-size: 30px;
+                }
+
+                .footer__redes {                
+                    text-align: center;
+                    color: $primary_color;
+                
+
+                        .footer__redes--img {               
+                            margin-right: 10px;
+                            gap: 1em;
+                            width: 20px;
+                        }
+                }
+
+                .nav__footer--texto:hover{
+                    color: rgb(177, 175, 175);
+                }
+                
+                img:hover {
+                    background-color: rgb(177, 175, 175);
+                    border-radius: 10%;
+                }
+        }
+
+
+        .footer__copy {
+            text-align: center;
+            color: #fff;
+            padding-bottom: 10px;
+        
+
+                .footer__copyright {
+                    font-weight: 100;
+                    font-size: 15px;
+                    margin-top: 10px;
+                }
+        }           
+
+}

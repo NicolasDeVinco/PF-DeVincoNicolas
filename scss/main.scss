@@ -1,0 +1,1128 @@
+@import "base";
+@import "utilidades";
+@import "layout";
+@import "components";
+
+
+
+
+/* ------------------------INDEX -------- BIENVENIDA CONTAINER------------------------------------------------*/
+
+
+.slider__container {
+    text-align: center;
+    margin: 20px 0 80px 0;
+   
+   
+        .slider__container--img {
+            border-radius: 10px;
+            min-height: 50vh;
+            max-height: 100vh;
+        }
+
+}
+
+
+/*------------------------ INDEX------ CARDS CONTAINER ------------------------------------------------ */
+
+.bada__container {
+    @include grid-center;
+    grid-template-columns: 5fr auto 5fr;
+    background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(209, 207, 207));
+    padding-bottom: 150px;
+    padding-top: 100px;
+
+
+        .bada__info{
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin: auto;
+            width: calc($ancho_full - 30%);
+            background: map-get($map: $glassformismo, $key:background);
+            box-shadow: map-get($map: $glassformismo, $key:box-shadow);
+            backdrop-filter: map-get($map: $glassformismo, $key:backdrop-filter);
+            border-radius: map-get($map: $glassformismo, $key:border-radius);
+            border:map-get($map: $glassformismo, $key:border);
+        
+
+                    .bada__info--title {
+                        margin-top: 0;
+                        font-size: 40px;
+                    }
+
+                    .bada__info--paragraph {
+                        margin: 30px 20px 30px 20px;
+                    }
+
+                    .bada__info--img {
+                        border: black solid;
+                        width: $ancho_half;
+                        border-radius: 50%;
+                    }
+                    
+        }
+
+        .bada__media--mp4 {
+            border: black solid 2px;
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            border-radius: 10px;
+            width: 80%;
+        }
+    
+}
+
+
+.roxe__container {
+    background-image: radial-gradient(circle, rgb(255, 254, 254), rgb(175, 174, 174));
+    @extend .bada__container;
+
+        .roxe__info {
+            @extend .bada__info;
+    
+
+                .roxe__info--title {
+                    @extend .bada__info--title;
+                }
+
+                .roxe__info--paragraph {
+                    @extend  .bada__info--paragraph;
+                }
+
+                .roxe__info--img {
+                    @extend .bada__info--img;
+                }
+                
+        }
+
+        .roxe__media {
+            margin-left: 40px;
+
+            .roxe__media--img {
+                border: black solid 2px;
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                border-radius: 10px;
+            }
+        }
+}
+
+
+
+.a2__container {
+    @extend .bada__container;
+
+    .a2__info {
+        @extend .bada__info;
+
+
+            .a2__info--title {
+                @extend .bada__info--title;
+            }
+
+            .a2__info--paragraph {
+                @extend  .bada__info--paragraph;
+            }
+
+            .a2__info--img {
+                @extend .bada__info--img;
+            }        
+             
+    }
+
+
+    .a2__media {
+
+            .a2__media--img {
+                border: black solid 2px;
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                border-radius: 10px;
+            }
+    }
+}
+
+/*------------------------INDEX ------  TIPOS CONTAINER ------------------------------------------------ */
+
+
+.tipos__container {
+    padding-bottom: 80px;
+    background-image: radial-gradient(circle, rgb(180, 180, 180), rgb(10, 10, 10));
+    padding-bottom: 150px;
+    padding-top: 50px;
+
+
+        .tipos__encargos {
+            @include grid-center;
+            grid-template-columns: 6fr 6fr;
+            padding-top: 80px;
+           
+
+                .tipos__info {
+                    text-align: center;
+                    padding: 20px 30px 40px 30px;
+                    margin: auto;
+                    background-image: radial-gradient(circle, rgb(63, 62, 62), rgb(10, 10, 10));
+                    box-shadow: 0 8px 32px 0 rgba(184, 184, 185, 0.37);
+                    backdrop-filter: map-get($map: $glassformismo, $key:backdrop-filter);
+                    border-radius: map-get($map: $glassformismo, $key:border-radius);
+                    border:map-get($map: $glassformismo, $key:border);
+                    color: $primary_color;
+                  
+                    
+
+                            .tipos__info--title {
+                                margin-top: 0;
+                                font-size: 35px;
+                                color: $primary_color;
+                            }
+
+                            .tipos__info--paragraph {
+                                margin: 30px 20px 60px 20px;
+                            }
+
+                            .tipos__info--img {
+                                border: black solid;
+                                max-width: 220px;
+                                max-height: 200px;
+                                border-radius: 5%;
+                                margin-bottom: 20px;
+                            }
+
+                            .tipos__form {
+                                margin-top: 30px;
+                            }
+
+                }
+        }
+
+                #tipos__info--realizadas {
+                                
+                    &:hover {
+                        transform: scale(1.1) ;
+                        border: white solid 3px;
+                        border-radius: 100px;
+                    }
+
+                        .submit {  
+                            &:hover {
+                                transform: scale(1.1) skewX(2deg) skewY(2deg);
+                                border: black solid 3px;
+                            }
+                        }
+                }
+                #tipos__info--pedidos {
+                                
+                    &:hover {
+                        transform: scale(1.1) ;
+                        border: white solid 3px;
+                        border-radius: 100px;
+                    }
+
+                        .submit {  
+                            &:hover {
+                                transform: scale(1.1) skewX(2deg) skewY(2deg);
+                                border: black solid 3px;
+                            }
+                        }
+                }
+}
+
+
+
+
+/*------------------------INDEX ------  QUESTIONS CONTAINER ------------------------------------------------ */
+
+
+.faqs__container {
+    display: grid;
+    gap: 2em;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: linear-gradient( rgb(238, 236, 236), rgb(209, 205, 205));
+
+    
+            .faqs__questions {
+                padding: 0 30px 0;
+                overflow: hidden;
+                border: 1px solid #0d0d0e;
+                border-radius: 6px;
+                margin-right: 20px;
+                margin-left: 20px;
+                height: 80%;
+
+                
+
+                        .faqs__subtitle {
+                            text-align: left;
+                            display: flex;
+                            font-size: 20px;
+                            font-weight: bold;
+                            padding: 30px 0 10px;
+                            cursor: pointer;
+                            color: var(--color-title);
+                            justify-content: space-between;
+                        }
+
+
+                        .faqs__arrow {
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            align-self: flex-end;
+                            margin-left: 10px;
+                            transition: transform .3s;
+                        }
+
+                        .faqs__arrow--rotate{
+                            transform: rotate(180deg);
+                        }
+
+                        .faqs__img {
+                            display: block;
+                        }
+
+                        .faqs__show {
+                            text-align: left;
+                            height: 0;
+                            transition: height .3s;
+                           
+                        }
+
+                }
+
+                .faqs__questions--add {
+                    height: 150px ;
+                }
+
+        }
+        
+       
+
+
+/*----------------------------ACERCA DE MI ---------------------------- ----------------------------  */
+
+
+.bio__container {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-areas: "bio img_bio";
+    padding-bottom: 50px;
+    padding-top: 60px;
+    background-image: linear-gradient( rgb(255, 255, 255), rgb(209, 207, 207));
+
+
+
+        .bio__container--texto {
+            grid-area: bio;
+            margin-left: 80px;
+        
+
+                .bio__texto--title {
+                    margin-top: 0;
+                }
+
+                .bio__texto--paragraph {
+                    line-height: 1.7;
+                    align-items: center;
+                }
+        }
+
+        .bio__container--img {
+            grid-area: img_bio;
+            margin: auto;
+        
+                .bio__img {
+                    width: calc($ancho_half + 10%);
+                    margin: auto;
+                    margin-bottom: 70px;
+                }
+
+                .bio__img--pic {
+                    width: $ancho_full;
+                    background: map-get($map: $glassformismo, $key:background);
+                    box-shadow: map-get($map: $glassformismo, $key:box-shadow);
+                    backdrop-filter: map-get($map: $glassformismo, $key:backdrop-filter);
+                    border-radius: 50px;
+                    border:map-get($map: $glassformismo, $key:border);
+                }
+        }
+}
+
+
+
+
+
+
+/*---------------------------- OBRAS---------------------------- */
+
+
+
+.container {
+    margin: auto;
+    text-align: center;
+
+
+        .obras_title {
+            padding-top: 20px;
+            margin-bottom: 50px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        } 
+
+        .obra_img_rectangulares {
+            width: 250px;
+            height: 150px;
+            margin: auto;
+            background: rgba(5, 5, 5, 0.5);
+            box-shadow: 0 2px 8px 0 rgba( 31, 38, 135, 0.37 );
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            transition: all 1s;
+
+            &:hover {
+                transform: scale(1.2,1.2);
+                border: black solid 2px;
+            }
+        }
+
+        .obra_img_cuadrados {
+            @extend.obra_img_rectangulares;
+            width: 200px;
+            height: 200px;
+        }
+
+        .obra_img_minis {
+            @extend.obra_img_rectangulares;
+            width: 100px;
+            height: 150px;
+        }
+
+        .obras_especificaciones {
+            margin-bottom: 50px;
+            font-size: 20px;
+        
+                .obra_img_title {
+                    margin-bottom: 0;
+                    margin-top: 30px;
+                }
+
+                .obra_img_paragraph {
+                    margin-top: 0.5rem;
+                    font-size: 15px;
+                    margin-bottom: 5px;
+                }
+
+                .obra_img_paragraph_stock {
+                    font-size: small;
+                    font-style: italic;
+                }
+        }
+}
+
+
+
+
+/*----------------------------- ENCARGOS ---------------------------- ---------------------------- */
+
+.calculo__container {  
+    padding-bottom: 70px;
+    padding-top: 70px;
+    background-image: linear-gradient( rgb(255, 255, 255), rgb(209, 207, 207));
+}
+
+
+.encargos_container {
+    grid-area: paso2;
+    padding-bottom: 80px;
+    background-image: linear-gradient( rgb(255, 255, 255), rgb(209, 207, 207));
+
+        .encargos_title {
+            text-align: center;
+            margin-top: 0;
+            padding-top: 40px;
+            margin-bottom: 10px;
+        }
+        .encargos_paragraph {
+            text-align: center;
+            font-style: italic;
+        }
+}
+
+
+
+
+.aclaraciones_container {
+    grid-area: paso2;
+    padding-bottom: 80px;
+    background-image: linear-gradient( rgb(255, 255, 255), rgb(209, 207, 207));
+
+        .aclaraciones_title {
+            margin-bottom: 60px;
+            padding-top: 40px;
+            text-align: center;
+        }
+        
+        .aclaraciones_cuadro {
+            margin: auto;
+            border: 1px black solid;
+            width: 90%;
+       
+                .aclaraciones_paragraph {
+                    line-height: 1.7;
+                    margin-bottom: 15px;
+                    margin-left: 20px;
+                }
+        }
+}
+
+
+
+/* ----------------------------CONTACTO --------------------------------------------------------*/
+
+.contacto__container {
+    @include grid-center;
+    background-image: linear-gradient( rgb(255, 255, 255), rgb(209, 207, 207));
+    padding-bottom: 70px;
+    grid-template-columns: 1fr 2fr;
+    gap: 0.5em;
+    
+        .contacto__container--info {
+            margin-top: 0;
+            margin-left: 50px;
+       
+
+                .contacto__container--title {
+                    margin-top: 80px;
+                }
+
+                .contacto__direccion {
+                    margin-top: 30px;
+                    margin-bottom: 20px;
+                }
+                
+                .contacto__cel {
+                    margin-bottom: 20px;
+                }
+                
+                .contacto__insta {
+                    margin-top: 20px;
+                }
+                
+                .enlace__insta {
+                    color: black;
+                }
+
+                .contacto__mapa{
+                    margin-top: 40px;
+                }
+                
+                .contacto__insta--logo {
+                    display: inline-flex;
+                }
+        }
+}
+   
+
+
+
+/*------------------- REGISTRO -------------------------------*/
+
+.registro_container {
+    margin-bottom: 80px;
+}
+
+
+
+
+
+/* -----------------------PROXIMAMENTE ------------------------------------------*/
+
+.proximamente_container {
+    background-image: radial-gradient(circle, rgb(190, 190, 190), rgb(59, 58, 58));
+    padding-bottom: 70px;
+    padding-top: 20px;
+    text-align: center;
+
+        .proximamente_elementos {
+            margin-top: 25px;
+       
+                .proximamente_title {
+                    font-size: 40px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: $primary_color;
+                }
+                    
+
+                .proximamente_paragraph {
+                    margin-top: 20px;
+                    font-size: 20px;
+                    font-style: italic;
+                    color: $primary_color;
+                }
+
+                .proximamente_foto {
+                    margin-top: 40px;
+                    margin-bottom: 25px;
+                
+
+                        .proximamente_img {
+                            width: 20%;  
+                            border-radius: 100px;
+                            border: black solid 5px;
+                        }
+                }
+        }
+
+}
+
+
+
+
+/* -----------------------ERROR 404 ------------------------------------------*/
+
+
+.error__container {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-areas: "texto img";
+    text-align: center;
+    margin-top: 80px;
+    background-image: linear-gradient( rgb(255, 255, 255), rgb(209, 207, 207));
+    padding-bottom: 130px;
+
+            h1 {
+                font-size: 90px;
+                margin-left: 40px;
+            }
+
+            p {
+                font-size: 40px;
+                margin-left: 40px;
+            }
+        
+
+            .error__img {
+                width: 50%;
+                border-radius: 50px;
+                border: black solid 4px;
+            }
+}
+
+
+/* ------------------ MEDIA QUERIES --------------------------------------------------------*/
+
+/*-------------TABLET!!!!!! ----------------------------------*/
+
+@media (max-width:992px){
+
+    .pages__header--container {
+
+            .header__logo--img {
+                border-radius: 50px;
+                margin: 5px 0  5px 30px;
+                width: 33px;
+                animation-name: logo__tablet;
+            }
+    }
+
+    
+ /* INDEX */
+
+
+ .bada__container {
+    display:block;     
+
+        .bada__info {
+            width: 55%;
+        }
+
+        .bada__flecha--img {
+            display: none;
+        }
+         
+        .bada__media {
+            margin: auto;
+            margin-top: 40px;
+            text-align: center;
+            width: 70%;        
+        }
+
+}
+
+.roxe__container {
+    display:block;     
+
+        .roxe__info {
+            margin-top: 40px;
+        }
+
+        .roxe__flecha--img {
+            display: none;
+        }
+         
+        .roxe__media {
+            margin: auto;
+            text-align: center;
+            width: 55%;        
+        }
+
+}
+
+.a2__container {
+    display:block;     
+
+        .a2__flecha--img {
+            display: none;
+        }
+         
+        .a2__media {
+            margin: auto;
+            margin-top: 40px;
+            text-align: center;
+            width: 60%;        
+        }
+
+}
+
+
+  .tipos__container {
+
+        .tipos__encargos {
+            display: block;
+
+                .tipos__info {
+                    width: 70%;
+
+                    .tipos__info--img {
+                        width: 50%;
+                    }
+                }
+        }
+}
+
+#tipos__info--realizadas {
+    margin-bottom: 40px;
+}
+
+    .faqs__container {
+
+        .faqs__questions--add {
+            height: 180px;
+        }
+    }
+
+
+/* ACERCA DE MI */
+
+.bio__container {
+    display: block;
+
+        .bio__container--texto {
+            margin: 0 40px 50px 40px;
+        }
+}
+
+
+/* ENCARGOS */
+
+.calculo__form {
+
+        .calculo__form--datos {
+            display: block;
+            text-align: center;
+        
+
+                .label__tamano {
+                    display: block;
+                }
+                
+                .label__sentido {
+                    display: block;
+                    margin-top: 20px;
+
+                }
+                
+                .label__bastidor {
+                    display: block;
+                }
+                
+                .label__diseno {
+                    display: block;
+                }
+
+
+                #sentido {
+                    margin-left: 30px;
+                }
+
+                #diseno {
+                    margin-left: 40px;
+                }
+                
+                .calculo__label {
+                    display: block;
+                }
+    }
+}
+ /* CONTACTO */
+
+ .contacto__container {
+    display: block;
+
+        .contacto__container--info {
+            margin: auto;
+            text-align: center;
+        }
+
+        .contacto__mapa {
+            max-width: 400px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+
+        .contacto__form {
+            margin: auto;
+            margin-top: 40px;
+        }
+    }
+
+
+
+    /* FOOTER */
+
+    .footer__container {
+
+        .footer__info {
+            display: block;
+        
+                .nav__footer--items {
+                    justify-content: center;
+                    gap:2em;
+                }
+    
+                .footer__encontrame {
+                    margin: auto;
+                    margin-top: 30px;
+                    margin-bottom: 10px;
+                    font-size: 25px;
+                }
+        }
+    }
+
+    /* 404 */
+
+    .error__container {
+        display: block;
+    }
+
+}
+   
+
+
+
+
+/*------------ MOBILE!!!!!! ----------------------------------*/
+
+@media (max-width:767px) {
+
+
+    /*HEADER */
+
+    .main-nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        margin-left: -100%;
+        transition: all .2s linear;
+        background-color: rgba(8, 8, 8, 0.7);
+        z-index: 100;
+      
+            .nav-links{
+                background-color: rgb(124, 123, 123);
+                color: white;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                width: 70%;
+                height: 100%;
+                align-items: center;
+                justify-content: flex-start;
+    
+            
+                    .link-item{
+                        margin-top: 1rem;
+                        color: white;
+                        text-decoration: none;
+                        font-weight: bold;
+                        position: relative;
+                    
+                    
+                            &::after {
+                                position: absolute;
+                                content: "";
+                                background-color: black;
+                                bottom: -5px;
+                                left: 0;
+                                width: 0%;
+                                height: 3px;
+                                transition: 0.3s ease all;
+                            }
+                            
+                            &:hover::after {
+                                width: 100%;
+                            }
+                    }
+            }
+    }
+    
+    
+    .main-nav.show{
+        margin-left: 100px;
+      }
+    
+      
+      .button-menu{
+        z-index: 200;
+        width: 40px;
+        height: 40px;
+        border: none;
+        display: flex;
+        background: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        justify-self: flex-end;
+        margin-right: 40px;
+      }
+      
+      .button-menu span{
+        width: 37px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #faf8f8;
+        border-radius: 3px;
+        transform-origin: 4px 0px;
+        transition: all .2s linear;
+    }
+      
+      .button-menu.close span {
+        opacity: 1;
+        transform: rotate(45deg) translate(0px, 0px);
+        background: #ffffff;
+      }
+      
+      .button-menu.close span:nth-child(2){
+        transform: rotate(-45deg) translate(-8px, 5px);
+      }
+      
+      .button-menu.close span:nth-child(3){
+        display: none;
+      }
+    
+
+    
+    .pages__header--container {
+
+        .header__logo--img {
+            border-radius: none;
+            margin: 5px 0  5px 200px;
+            width: 100px;
+            animation-name: logo__mobile;
+        }
+}
+
+  
+     
+    /* INDEX */
+
+    .bada__container {
+        display:block;     
+
+            .bada__flecha--img {
+                display: none;
+            }
+
+            .bada__media {
+                margin: auto;
+                margin-top: 40px;
+                width: 70%;       
+            }
+  
+    }
+
+
+    .roxe__container {
+        display:block;     
+
+        .roxe__info {
+        margin-top: 40px;
+        }
+
+            .roxe__flecha--img {
+                display: none;
+            }
+
+            .roxe__media {
+                margin: auto;
+                width: 55%;       
+            }
+
+    }
+
+
+    .a2__container {
+        display:block;     
+
+            .a2__flecha--img {
+                display: none;
+            }
+
+            .a2__media {
+                margin: auto;
+                margin-top: 40px;
+                width: 60%;       
+            }
+
+    }
+
+    .tipos__container {
+
+        .tipos__encargos {
+            display: block;
+        }
+            .tipos__info--img {
+                width: 50%;
+            }
+    }
+
+.faqs__container {
+
+    .faqs__questions--add {
+        height: 290px;
+    }
+}
+
+
+/* ACERCA DE MI */
+
+    .bio__container {
+    display: block;
+
+            .bio__container--texto {
+            margin: 0 40px 50px 40px;
+        }
+}
+
+
+/* ENCARGOS */
+
+    .calculo__form {
+
+            .calculo__form--datos {
+                display: block;
+                text-align: center;
+            }
+
+            .label__tamano {
+                display: block;
+            }
+            
+            .label__sentido {
+                display: block;
+                margin-top: 20px;
+            }
+            
+            .label__bastidor {
+                display: block;
+                margin-top: 0;
+            }
+            
+            .label__diseno {
+                display: block;
+            }
+
+            .calculo__label {
+                display: block;
+            }
+
+    }
+
+  /* CONTACTO */
+
+  .contacto__container {
+    display: block;
+
+        .contacto__container--info {
+            margin: auto;
+            text-align: center;
+
+
+                .contacto__mapa {
+                    max-width: 300px;
+                    margin-top: 20px;
+                }
+        }
+
+        .contacto__form {
+            margin: auto;
+            margin-top: 60px;
+        }
+
+    }
+
+
+
+/* FOOTER */
+
+    .footer__container {
+
+        .footer__info {
+            display: block;  
+
+                .nav__footer {
+                    text-align: center;
+                }
+                
+                .footer__title {
+                    text-align: start;
+                    margin-bottom: 20px;
+                }
+
+                .nav__footer--items {
+                    display: block;
+                    font-size: 20px;
+                    margin-bottom: 40px;
+                    padding-left: 0;
+                }
+        }
+        
+        .footer__encontrame {
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            font-size: 25px;
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+/*test*/
+
+
+
+
+
+

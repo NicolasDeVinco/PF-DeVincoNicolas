@@ -1,0 +1,118 @@
+/* --------------VARIABLES -----------------------------------*/
+
+
+$ancho_full: 100%;
+$ancho_half: 50%;
+$primary_color: white;
+$secondary_color: rgb(202, 202, 202);
+
+
+
+/* --------------MAP GET ---------------------------------------*/
+
+$glassformismo: (
+    background: rgba(212, 211, 211, 0.5),
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ),
+    backdrop-filter: blur( 4px ),
+    border-radius: 10px,
+    border: 1px solid rgba( 255, 255, 255, 0.18 ),
+);
+
+
+/* -------------------- MIXIN ---------------------------------*/
+
+@mixin grid-center {
+    display: grid;
+    align-items: center;
+}
+
+@mixin center-grid {
+    @include grid-center;
+}
+
+
+/* ----------- CONDICIONALES ------------------------*/
+
+$temporada:verano;
+$verano:  #080808;
+$primavera: white;
+$invierno: grey;
+
+body {
+@if $temporada == verano {
+	
+		.tipos__container {background-color:$verano;}
+		
+	} 
+    @else if $temporada == primavera {
+		
+			.tipos__container{background-color: $primavera;}
+		
+	} 
+    @else {
+		.tipos__container{background-color: $invierno;}
+	}
+
+}
+
+
+
+/* --------------------- ANIMACIONES -----------------------------*/
+
+@keyframes logo__desktop {
+    0%{ border-radius: none;
+        margin: 5px 0  5px 250px; }
+   
+    50%{ border-radius: 25px;
+        margin: 5px 0  5px 150px; 
+        transform: rotateZ(-360deg);}
+    
+    100%{ border-radius: 50px;
+        margin: 5px 0  5px 30px; 
+        }
+ }
+ 
+
+ @keyframes logo__tablet {
+    0%{ width: 33px;
+        margin: 5px 0  5px 30px;}
+   
+    50%{ width: 66px;
+        margin: 5px 0  5px 30px;}
+    
+    100%{ width: 100px;
+        margin: 5px 0  5px 30px;}
+ }
+
+
+ @keyframes logo__mobile {
+
+    0%{ border-radius: none;
+        margin: 5px 0  5px 200px;
+        width: 100px;
+    border: rgb(36, 36, 36) solid 3px;
+ }
+
+    25%{ border-radius: 10px;
+        margin: 5px 0  5px 160px;
+        width: 40px;
+        border: rgb(253, 252, 252) solid 3px;
+}
+        
+    50%{ border-radius: 20px;
+        margin: 5px 0  5px 120px; 
+        width: 60px;
+    border: rgb(95, 94, 94) solid 3px;
+}
+
+    75%{ border-radius: 35px;
+        margin: 5px 0  5px 70px; 
+        width: 80px;
+    border: rgb(126, 125, 125) solid 3px;
+}
+                    
+    100%{ border-radius: 50px;
+        margin: 5px 0  5px 30px; 
+        width: 100px;
+}
+ }

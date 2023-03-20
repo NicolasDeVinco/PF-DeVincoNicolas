@@ -1,0 +1,390 @@
+
+
+
+
+/*-----------------------------SUBMITS ----------------------------------------------------------*/
+
+.submit {
+    background-color: #f8f8f8;
+    box-shadow: 0 4px 12px 0 rgba( 31, 38, 135, 0.37 );
+    color: #070707;
+    border: none;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;  
+
+
+        &:hover {
+            background-color: $secondary_color;
+            }
+
+}
+
+.submit__azul {
+    width: calc($ancho_half * 2);
+    background: #5454d4;
+    border: none;
+    color: $primary_color;
+    padding: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $secondary_color;
+        border: black solid 2px;
+        }
+
+}
+
+
+
+
+/*-----------------------------FORMS ----------------------------------------------------------*/
+
+
+
+/*-------------------FORM ENCARGOS  - CALCULA EL VALOR ---------------------------------*/
+
+
+.calculo__form {
+    width: calc($ancho_full - 10%);
+    padding: 10px 20px;
+    margin: auto;
+    background: map-get($map: $glassformismo, $key:background);
+                    box-shadow: map-get($map: $glassformismo, $key:box-shadow);
+                    backdrop-filter: map-get($map: $glassformismo, $key:backdrop-filter);
+                    border-radius: 50px;
+                    border:map-get($map: $glassformismo, $key:border);
+
+        .calculo__form--title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .calculo__form--datos {
+            display: grid;
+            grid-template-columns: 6fr 6fr;
+            grid-template-areas: 
+            "tamano sentido"
+            "bastidor diseno";
+
+                .label__tamano {
+                grid-area: tamano;
+                }
+
+                .label__sentido {
+                    grid-area: sentido;
+                }
+
+                .label__bastidor {
+                    grid-area: bastidor;
+                    margin-top: 20px;
+                }
+
+                .label__diseno {
+                    grid-area: diseno;
+                    margin-top: 20px;
+                }
+
+                #tamano {
+                    width: $ancho_half;
+                    margin-left: 30px;
+                }
+
+                #sentido {
+                    width: $ancho_half;
+                    margin-left: 20px;
+                }
+
+                #bastidor {             
+                    width: $ancho_half;
+                    margin-left: 20px;
+                }
+
+                #diseno {
+                    width: $ancho_half;
+                    margin-left: 30px;
+                }
+            }
+
+        .submit__container {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .submit__azul {
+            margin: auto;
+            max-width: 100px;
+            border-radius: 10px;
+        }
+
+        .precio_final {
+            grid-area: precio;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+}
+
+/*-------------------FORM ENCARGOS  - COMPLETA TUS DATOS Y TE CONTACTAREMOS ---------------------------------*/
+
+
+.encargos_form {
+    background-color: rgb(241, 237, 237);
+    border-radius: 1em;
+    padding: 1em 1.5em;
+    text-align: center;
+    width: calc($ancho_full - 20%);
+    margin: auto;
+    margin-top: 50px;
+    border: 2px grey solid;
+
+        .encargos_form_elementos {
+            width: $ancho_full;
+            display: grid;
+            gap: 1em;
+            padding-bottom: 20px;
+        }
+
+        .encargos_form_title {
+            padding-bottom: 5px;
+            font-size: 25px;
+            text-align: start;
+        }
+
+        .encargos_form_input {
+            font-size: 1rem;
+            padding: .2em 1em;
+        }
+
+        .encargos_form_input_mensaje {
+            resize: none;
+            padding: 10px 10px 60px;
+            margin-bottom: .5em;
+        }
+
+        .encargos_dibujo {
+            text-align: start;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        .submit__azul {
+            margin-top: 40px;
+        }
+
+}
+
+
+
+/* --------------------FORM CONTACTO -------------------------------------------------------- */
+
+.contacto__form {
+    background-color: rgb(196, 191, 191);
+    width: calc($ancho_full - 30%);
+    border-radius: 1em;
+    padding: 1em 1.5em;
+    margin: auto;
+    margin-right: 30px;
+    margin-top: 80px;
+    background: rgba(212, 211, 211, 0.5);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 2px solid rgb(83, 83, 83);
+
+
+        .contacto__form--info {
+            width: $ancho_full;
+            height: 100%;
+            display: grid;
+            gap: 1em;
+            grid-auto-columns: 100%;
+        }
+
+        .contacto__form--title {
+            font-size: 1.9rem;
+            margin-bottom: .5em;  
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        .form__input--contacto {
+            font-size: 1rem;
+            padding: .8em 1em;
+        }
+
+        .form__input--contacto--Message {
+            resize: none;
+            padding: 1.8em 1em;
+            margin-bottom: .5em;
+        }
+
+    
+
+}
+
+
+
+
+/* --------------------FORM INICIO SESION -------------------------------------------------------- */
+
+.form_login {
+    width: calc($ancho_half - 10%);
+    background: #ececec;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 7px 13px 37px #696871;
+    padding: 20px 30px;
+    border-top: 4px solid rgb(100, 100, 100);
+    font-family: Arial, Helvetica, sans-serif;
+
+
+        h5 {
+            margin: 0;
+            text-align: center;
+            height: 40px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            border-bottom: 1px solid;
+        }
+
+        .user_login {
+            width: $ancho_full;
+            margin-top: 10px;
+            border: 1px solid grey;
+            margin-bottom: 15px;
+            padding: 5px 4px;
+        }
+
+        
+        p {
+            height: 40px;
+            text-align: center;
+            border-bottom: 1px solid;
+        }
+
+        .olvidaste_login {
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .olvidaste_login:hover {
+            text-decoration: underline;
+        }
+
+}
+
+
+
+.form_login_registro {
+    width: calc($ancho_half - 10%);
+    background: #ececec;
+    margin: auto;
+    margin-top: 10px;
+    box-shadow: 7px 13px 37px #696871;
+    padding: 20px 30px;
+    border-top: 4px solid rgb(100, 100, 100);
+    margin-bottom: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+        h6 {
+            margin: 0;
+            margin-top: 10px;
+            text-align: center;
+            height: 40px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+}
+
+
+
+/* --------------------FORM REGISTRACION -------------------------------------------------------- */
+
+
+.form_registro {
+    background-color: rgb(161, 161, 161);
+    width: $ancho_half;
+    max-width: 900px;
+    border-radius: 1em;
+    padding: 1em 1.5em;
+    margin: auto;
+    margin-top: 50px;
+    background: rgba(212, 211, 211, 0.5);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 2px solid rgb(83, 83, 83);
+
+
+        .form_registro_elementos {
+            width: $ancho_full;
+            height: 100%;
+            display: grid;
+            gap: 1em;
+            grid-auto-columns: 100%;
+            padding-bottom: 20px;
+        }
+
+        .form_registro_title {
+            padding-bottom: 5px;
+            font-size: 35px;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .form_registro_input {
+            font-size: 1rem;
+            padding: .2em 1em;
+        }
+
+        #acepto_terms {
+            margin-top: 15px;
+        }
+
+}
+
+
+
+
+/* --------------------FORM REESTABLECER -------------------------------------------------------- */
+
+.form_login_olvide {
+    width: calc($ancho_half - 10%);
+    background: #ececec;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 7px 13px 37px #696871;
+    padding: 20px 30px;
+    border-top: 4px solid rgb(100, 100, 100);
+    margin-bottom: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+
+        h5 {
+            margin: 0;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 20px;
+            border-bottom: 1px solid;
+            padding-bottom: 30px;
+        }
+        .user_login {
+            width: calc($ancho_half * 2);
+            margin-top: 10px;
+            border: 1px solid grey;
+            margin-bottom: 15px;
+            padding: 5px 4px;
+        }
+        
+       
+    }

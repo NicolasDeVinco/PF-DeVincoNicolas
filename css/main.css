@@ -1,0 +1,1602 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* --------------VARIABLES -----------------------------------*/
+/* --------------MAP GET ---------------------------------------*/
+/* -------------------- MIXIN ---------------------------------*/
+/* ----------- CONDICIONALES ------------------------*/
+body .tipos__container {
+  background-color: #080808;
+}
+
+/* --------------------- ANIMACIONES -----------------------------*/
+@keyframes logo__desktop {
+  0% {
+    border-radius: none;
+    margin: 5px 0 5px 250px;
+  }
+  50% {
+    border-radius: 25px;
+    margin: 5px 0 5px 150px;
+    transform: rotateZ(-360deg);
+  }
+  100% {
+    border-radius: 50px;
+    margin: 5px 0 5px 30px;
+  }
+}
+@keyframes logo__tablet {
+  0% {
+    width: 33px;
+    margin: 5px 0 5px 30px;
+  }
+  50% {
+    width: 66px;
+    margin: 5px 0 5px 30px;
+  }
+  100% {
+    width: 100px;
+    margin: 5px 0 5px 30px;
+  }
+}
+@keyframes logo__mobile {
+  0% {
+    border-radius: none;
+    margin: 5px 0 5px 200px;
+    width: 100px;
+    border: rgb(36, 36, 36) solid 3px;
+  }
+  25% {
+    border-radius: 10px;
+    margin: 5px 0 5px 160px;
+    width: 40px;
+    border: rgb(253, 252, 252) solid 3px;
+  }
+  50% {
+    border-radius: 20px;
+    margin: 5px 0 5px 120px;
+    width: 60px;
+    border: rgb(95, 94, 94) solid 3px;
+  }
+  75% {
+    border-radius: 35px;
+    margin: 5px 0 5px 70px;
+    width: 80px;
+    border: rgb(126, 125, 125) solid 3px;
+  }
+  100% {
+    border-radius: 50px;
+    margin: 5px 0 5px 30px;
+    width: 100px;
+  }
+}
+/* ------------BODY------------------------------------------------ */
+body {
+  font-family: "Raleway", sans-serif;
+}
+body .whatsapp_bot {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+
+/* ------------INDEX HERO CONTAINER------------------------------------------------ */
+.hero__container {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  max-height: 200px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  color: #fff;
+}
+
+.hero__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5490196078) 0%, rgba(0, 0, 0, 0.5490196078) 100%), url(../images/FondoOK.jpg);
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 0 100%);
+  z-index: -1;
+}
+
+/*------------------------INDEX HEADER  ------------------------------------------------*/
+.header__container {
+  margin-top: 40px;
+  margin-right: 10px;
+  justify-self: flex-end;
+}
+
+.hero__title--texto {
+  margin: 0 0 75px 40px;
+  text-align: left;
+  padding-left: 0;
+  font-size: 6vw;
+  padding-top: 0;
+  letter-spacing: 5px;
+}
+
+/* ---------------------------- RESTO PAGINAS: HEADER, LOGO Y NAVEGACION ---------------------------- */
+.pages__header--container {
+  display: grid;
+  align-items: center;
+  background-image: url(../images/fondonav.jpeg);
+  grid-template-columns: 20% 80%;
+  border-bottom: black solid;
+  grid-template-areas: "logo navegacion";
+}
+.pages__header--container .header__logo {
+  grid-area: logo;
+}
+.pages__header--container .header__logo--img {
+  width: 100px;
+  margin: 5px 0 5px 250px;
+  border: white solid;
+  animation-name: logo__desktop;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-delay: 500ms;
+  animation-fill-mode: forwards;
+}
+
+/* ---------------------------- NAVEGACION --------------------------------------------------------*/
+.main-nav {
+  grid-area: navegacion;
+  display: block;
+  margin: auto;
+  margin-right: 0px;
+}
+.main-nav a {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  list-style: none;
+  margin-right: 30px;
+}
+.main-nav a:hover {
+  color: rgb(177, 175, 175);
+}
+.main-nav a img:hover {
+  background-color: rgb(177, 175, 175);
+  border-radius: 10%;
+}
+
+.button-menu {
+  display: none;
+}
+
+/* ---------------------------- FOOTER ---------------------------- ----------------------------  */
+.footer__container {
+  background-color: #4c4c4d;
+  border-top: grey solid;
+}
+.footer__container .footer__info {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 6fr 6fr;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+.footer__container .footer__info .footer__title {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  color: rgb(145, 143, 143);
+  font-weight: 1000;
+  margin-left: 20px;
+}
+.footer__container .footer__info .nav__footer--items {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  background: none;
+  gap: 1.5em;
+  font-size: 20px;
+}
+.footer__container .footer__info .nav__footer--texto {
+  text-decoration: none;
+  color: white;
+}
+.footer__container .footer__info .footer__encontrame {
+  font-weight: 100;
+  font-size: 30px;
+}
+.footer__container .footer__info .footer__redes {
+  text-align: center;
+  color: white;
+}
+.footer__container .footer__info .footer__redes .footer__redes--img {
+  margin-right: 10px;
+  gap: 1em;
+  width: 20px;
+}
+.footer__container .footer__info .nav__footer--texto:hover {
+  color: rgb(177, 175, 175);
+}
+.footer__container .footer__info img:hover {
+  background-color: rgb(177, 175, 175);
+  border-radius: 10%;
+}
+.footer__container .footer__copy {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 10px;
+}
+.footer__container .footer__copy .footer__copyright {
+  font-weight: 100;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+/*-----------------------------SUBMITS ----------------------------------------------------------*/
+.submit {
+  background-color: #f8f8f8;
+  box-shadow: 0 4px 12px 0 rgba(31, 38, 135, 0.37);
+  color: #070707;
+  border: none;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+.submit:hover {
+  background-color: rgb(202, 202, 202);
+}
+
+.submit__azul {
+  width: 100%;
+  background: #5454d4;
+  border: none;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+.submit__azul:hover {
+  background-color: rgb(202, 202, 202);
+  border: black solid 2px;
+}
+
+/*-----------------------------FORMS ----------------------------------------------------------*/
+/*-------------------FORM ENCARGOS  - CALCULA EL VALOR ---------------------------------*/
+.calculo__form {
+  width: 90%;
+  padding: 10px 20px;
+  margin: auto;
+  background: rgba(212, 211, 211, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.calculo__form .calculo__form--title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.calculo__form .calculo__form--datos {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  grid-template-areas: "tamano sentido" "bastidor diseno";
+}
+.calculo__form .calculo__form--datos .label__tamano {
+  grid-area: tamano;
+}
+.calculo__form .calculo__form--datos .label__sentido {
+  grid-area: sentido;
+}
+.calculo__form .calculo__form--datos .label__bastidor {
+  grid-area: bastidor;
+  margin-top: 20px;
+}
+.calculo__form .calculo__form--datos .label__diseno {
+  grid-area: diseno;
+  margin-top: 20px;
+}
+.calculo__form .calculo__form--datos #tamano {
+  width: 50%;
+  margin-left: 30px;
+}
+.calculo__form .calculo__form--datos #sentido {
+  width: 50%;
+  margin-left: 20px;
+}
+.calculo__form .calculo__form--datos #bastidor {
+  width: 50%;
+  margin-left: 20px;
+}
+.calculo__form .calculo__form--datos #diseno {
+  width: 50%;
+  margin-left: 30px;
+}
+.calculo__form .submit__container {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.calculo__form .submit__azul {
+  margin: auto;
+  max-width: 100px;
+  border-radius: 10px;
+}
+.calculo__form .precio_final {
+  grid-area: precio;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/*-------------------FORM ENCARGOS  - COMPLETA TUS DATOS Y TE CONTACTAREMOS ---------------------------------*/
+.encargos_form {
+  background-color: rgb(241, 237, 237);
+  border-radius: 1em;
+  padding: 1em 1.5em;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  border: 2px grey solid;
+}
+.encargos_form .encargos_form_elementos {
+  width: 100%;
+  display: grid;
+  gap: 1em;
+  padding-bottom: 20px;
+}
+.encargos_form .encargos_form_title {
+  padding-bottom: 5px;
+  font-size: 25px;
+  text-align: start;
+}
+.encargos_form .encargos_form_input {
+  font-size: 1rem;
+  padding: 0.2em 1em;
+}
+.encargos_form .encargos_form_input_mensaje {
+  resize: none;
+  padding: 10px 10px 60px;
+  margin-bottom: 0.5em;
+}
+.encargos_form .encargos_dibujo {
+  text-align: start;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.encargos_form .submit__azul {
+  margin-top: 40px;
+}
+
+/* --------------------FORM CONTACTO -------------------------------------------------------- */
+.contacto__form {
+  background-color: rgb(196, 191, 191);
+  width: 70%;
+  border-radius: 1em;
+  padding: 1em 1.5em;
+  margin: auto;
+  margin-right: 30px;
+  margin-top: 80px;
+  background: rgba(212, 211, 211, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 2px solid rgb(83, 83, 83);
+}
+.contacto__form .contacto__form--info {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 1em;
+  grid-auto-columns: 100%;
+}
+.contacto__form .contacto__form--title {
+  font-size: 1.9rem;
+  margin-bottom: 0.5em;
+  padding-top: 0;
+  margin-top: 0;
+}
+.contacto__form .form__input--contacto {
+  font-size: 1rem;
+  padding: 0.8em 1em;
+}
+.contacto__form .form__input--contacto--Message {
+  resize: none;
+  padding: 1.8em 1em;
+  margin-bottom: 0.5em;
+}
+
+/* --------------------FORM INICIO SESION -------------------------------------------------------- */
+.form_login {
+  width: 40%;
+  background: #ececec;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 7px 13px 37px #696871;
+  padding: 20px 30px;
+  border-top: 4px solid rgb(100, 100, 100);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form_login h5 {
+  margin: 0;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-bottom: 1px solid;
+}
+.form_login .user_login {
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid grey;
+  margin-bottom: 15px;
+  padding: 5px 4px;
+}
+.form_login p {
+  height: 40px;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+.form_login .olvidaste_login {
+  text-decoration: none;
+  font-size: 12px;
+}
+.form_login .olvidaste_login:hover {
+  text-decoration: underline;
+}
+
+.form_login_registro {
+  width: 40%;
+  background: #ececec;
+  margin: auto;
+  margin-top: 10px;
+  box-shadow: 7px 13px 37px #696871;
+  padding: 20px 30px;
+  border-top: 4px solid rgb(100, 100, 100);
+  margin-bottom: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form_login_registro h6 {
+  margin: 0;
+  margin-top: 10px;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* --------------------FORM REGISTRACION -------------------------------------------------------- */
+.form_registro {
+  background-color: rgb(161, 161, 161);
+  width: 50%;
+  max-width: 900px;
+  border-radius: 1em;
+  padding: 1em 1.5em;
+  margin: auto;
+  margin-top: 50px;
+  background: rgba(212, 211, 211, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 2px solid rgb(83, 83, 83);
+}
+.form_registro .form_registro_elementos {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 1em;
+  grid-auto-columns: 100%;
+  padding-bottom: 20px;
+}
+.form_registro .form_registro_title {
+  padding-bottom: 5px;
+  font-size: 35px;
+  text-align: center;
+  margin-top: 0;
+}
+.form_registro .form_registro_input {
+  font-size: 1rem;
+  padding: 0.2em 1em;
+}
+.form_registro #acepto_terms {
+  margin-top: 15px;
+}
+
+/* --------------------FORM REESTABLECER -------------------------------------------------------- */
+.form_login_olvide {
+  width: 40%;
+  background: #ececec;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 7px 13px 37px #696871;
+  padding: 20px 30px;
+  border-top: 4px solid rgb(100, 100, 100);
+  margin-bottom: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form_login_olvide h5 {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+  border-bottom: 1px solid;
+  padding-bottom: 30px;
+}
+.form_login_olvide .user_login {
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid grey;
+  margin-bottom: 15px;
+  padding: 5px 4px;
+}
+
+/* ------------------------INDEX -------- BIENVENIDA CONTAINER------------------------------------------------*/
+.slider__container {
+  text-align: center;
+  margin: 20px 0 80px 0;
+}
+.slider__container .slider__container--img {
+  border-radius: 10px;
+  min-height: 50vh;
+  max-height: 100vh;
+}
+
+/*------------------------ INDEX------ CARDS CONTAINER ------------------------------------------------ */
+.bada__container, .a2__container, .roxe__container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 5fr auto 5fr;
+  background-image: radial-gradient(circle, rgb(255, 255, 255), rgb(209, 207, 207));
+  padding-bottom: 150px;
+  padding-top: 100px;
+}
+.bada__container .bada__info, .a2__container .bada__info, .a2__container .a2__info, .roxe__container .bada__info, .roxe__container .roxe__info {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: auto;
+  width: 70%;
+  background: rgba(212, 211, 211, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.bada__container .bada__info .bada__info--title, .a2__container .bada__info .bada__info--title, .a2__container .a2__info .bada__info--title, .a2__container .a2__info .a2__info--title, .roxe__container .bada__info .bada__info--title, .roxe__container .roxe__info .bada__info--title, .roxe__container .roxe__info .roxe__info--title {
+  margin-top: 0;
+  font-size: 40px;
+}
+.bada__container .bada__info .bada__info--paragraph, .a2__container .bada__info .bada__info--paragraph, .a2__container .a2__info .bada__info--paragraph, .a2__container .a2__info .a2__info--paragraph, .roxe__container .bada__info .bada__info--paragraph, .roxe__container .roxe__info .bada__info--paragraph, .roxe__container .roxe__info .roxe__info--paragraph {
+  margin: 30px 20px 30px 20px;
+}
+.bada__container .bada__info .bada__info--img, .a2__container .bada__info .bada__info--img, .a2__container .a2__info .bada__info--img, .a2__container .a2__info .a2__info--img, .roxe__container .bada__info .bada__info--img, .roxe__container .roxe__info .bada__info--img, .roxe__container .roxe__info .roxe__info--img {
+  border: black solid;
+  width: 50%;
+  border-radius: 50%;
+}
+.bada__container .bada__media--mp4, .a2__container .bada__media--mp4, .roxe__container .bada__media--mp4 {
+  border: black solid 2px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  width: 80%;
+}
+
+.roxe__container {
+  background-image: radial-gradient(circle, rgb(255, 254, 254), rgb(175, 174, 174));
+}
+.roxe__container .roxe__media {
+  margin-left: 40px;
+}
+.roxe__container .roxe__media .roxe__media--img {
+  border: black solid 2px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+}
+
+.a2__container .a2__media .a2__media--img {
+  border: black solid 2px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+}
+
+/*------------------------INDEX ------  TIPOS CONTAINER ------------------------------------------------ */
+.tipos__container {
+  padding-bottom: 80px;
+  background-image: radial-gradient(circle, rgb(180, 180, 180), rgb(10, 10, 10));
+  padding-bottom: 150px;
+  padding-top: 50px;
+}
+.tipos__container .tipos__encargos {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 6fr 6fr;
+  padding-top: 80px;
+}
+.tipos__container .tipos__encargos .tipos__info {
+  text-align: center;
+  padding: 20px 30px 40px 30px;
+  margin: auto;
+  background-image: radial-gradient(circle, rgb(63, 62, 62), rgb(10, 10, 10));
+  box-shadow: 0 8px 32px 0 rgba(184, 184, 185, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: white;
+}
+.tipos__container .tipos__encargos .tipos__info .tipos__info--title {
+  margin-top: 0;
+  font-size: 35px;
+  color: white;
+}
+.tipos__container .tipos__encargos .tipos__info .tipos__info--paragraph {
+  margin: 30px 20px 60px 20px;
+}
+.tipos__container .tipos__encargos .tipos__info .tipos__info--img {
+  border: black solid;
+  max-width: 220px;
+  max-height: 200px;
+  border-radius: 5%;
+  margin-bottom: 20px;
+}
+.tipos__container .tipos__encargos .tipos__info .tipos__form {
+  margin-top: 30px;
+}
+.tipos__container #tipos__info--realizadas:hover {
+  transform: scale(1.1);
+  border: white solid 3px;
+  border-radius: 100px;
+}
+.tipos__container #tipos__info--realizadas .submit:hover {
+  transform: scale(1.1) skewX(2deg) skewY(2deg);
+  border: black solid 3px;
+}
+.tipos__container #tipos__info--pedidos:hover {
+  transform: scale(1.1);
+  border: white solid 3px;
+  border-radius: 100px;
+}
+.tipos__container #tipos__info--pedidos .submit:hover {
+  transform: scale(1.1) skewX(2deg) skewY(2deg);
+  border: black solid 3px;
+}
+
+/*------------------------INDEX ------  QUESTIONS CONTAINER ------------------------------------------------ */
+.faqs__container {
+  display: grid;
+  gap: 2em;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-image: linear-gradient(rgb(238, 236, 236), rgb(209, 205, 205));
+}
+.faqs__container .faqs__questions {
+  padding: 0 30px 0;
+  overflow: hidden;
+  border: 1px solid #0d0d0e;
+  border-radius: 6px;
+  margin-right: 20px;
+  margin-left: 20px;
+  height: 80%;
+}
+.faqs__container .faqs__questions .faqs__subtitle {
+  text-align: left;
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 30px 0 10px;
+  cursor: pointer;
+  color: var(--color-title);
+  justify-content: space-between;
+}
+.faqs__container .faqs__questions .faqs__arrow {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+.faqs__container .faqs__questions .faqs__arrow--rotate {
+  transform: rotate(180deg);
+}
+.faqs__container .faqs__questions .faqs__img {
+  display: block;
+}
+.faqs__container .faqs__questions .faqs__show {
+  text-align: left;
+  height: 0;
+  transition: height 0.3s;
+}
+.faqs__container .faqs__questions--add {
+  height: 150px;
+}
+
+/*----------------------------ACERCA DE MI ---------------------------- ----------------------------  */
+.bio__container {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  grid-template-areas: "bio img_bio";
+  padding-bottom: 50px;
+  padding-top: 60px;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(209, 207, 207));
+}
+.bio__container .bio__container--texto {
+  grid-area: bio;
+  margin-left: 80px;
+}
+.bio__container .bio__container--texto .bio__texto--title {
+  margin-top: 0;
+}
+.bio__container .bio__container--texto .bio__texto--paragraph {
+  line-height: 1.7;
+  align-items: center;
+}
+.bio__container .bio__container--img {
+  grid-area: img_bio;
+  margin: auto;
+}
+.bio__container .bio__container--img .bio__img {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 70px;
+}
+.bio__container .bio__container--img .bio__img--pic {
+  width: 100%;
+  background: rgba(212, 211, 211, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/*---------------------------- OBRAS---------------------------- */
+.container {
+  margin: auto;
+  text-align: center;
+}
+.container .obras_title {
+  padding-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.container .obra_img_rectangulares, .container .obra_img_minis, .container .obra_img_cuadrados {
+  width: 250px;
+  height: 150px;
+  margin: auto;
+  background: rgba(5, 5, 5, 0.5);
+  box-shadow: 0 2px 8px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 1s;
+}
+.container .obra_img_rectangulares:hover, .container .obra_img_minis:hover, .container .obra_img_cuadrados:hover {
+  transform: scale(1.2, 1.2);
+  border: black solid 2px;
+}
+.container .obra_img_cuadrados {
+  width: 200px;
+  height: 200px;
+}
+.container .obra_img_minis {
+  width: 100px;
+  height: 150px;
+}
+.container .obras_especificaciones {
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+.container .obras_especificaciones .obra_img_title {
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+.container .obras_especificaciones .obra_img_paragraph {
+  margin-top: 0.5rem;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.container .obras_especificaciones .obra_img_paragraph_stock {
+  font-size: small;
+  font-style: italic;
+}
+
+/*----------------------------- ENCARGOS ---------------------------- ---------------------------- */
+.calculo__container {
+  padding-bottom: 70px;
+  padding-top: 70px;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(209, 207, 207));
+}
+
+.encargos_container {
+  grid-area: paso2;
+  padding-bottom: 80px;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(209, 207, 207));
+}
+.encargos_container .encargos_title {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 40px;
+  margin-bottom: 10px;
+}
+.encargos_container .encargos_paragraph {
+  text-align: center;
+  font-style: italic;
+}
+
+.aclaraciones_container {
+  grid-area: paso2;
+  padding-bottom: 80px;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(209, 207, 207));
+}
+.aclaraciones_container .aclaraciones_title {
+  margin-bottom: 60px;
+  padding-top: 40px;
+  text-align: center;
+}
+.aclaraciones_container .aclaraciones_cuadro {
+  margin: auto;
+  border: 1px black solid;
+  width: 90%;
+}
+.aclaraciones_container .aclaraciones_cuadro .aclaraciones_paragraph {
+  line-height: 1.7;
+  margin-bottom: 15px;
+  margin-left: 20px;
+}
+
+/* ----------------------------CONTACTO --------------------------------------------------------*/
+.contacto__container {
+  display: grid;
+  align-items: center;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(209, 207, 207));
+  padding-bottom: 70px;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5em;
+}
+.contacto__container .contacto__container--info {
+  margin-top: 0;
+  margin-left: 50px;
+}
+.contacto__container .contacto__container--info .contacto__container--title {
+  margin-top: 80px;
+}
+.contacto__container .contacto__container--info .contacto__direccion {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.contacto__container .contacto__container--info .contacto__cel {
+  margin-bottom: 20px;
+}
+.contacto__container .contacto__container--info .contacto__insta {
+  margin-top: 20px;
+}
+.contacto__container .contacto__container--info .enlace__insta {
+  color: black;
+}
+.contacto__container .contacto__container--info .contacto__mapa {
+  margin-top: 40px;
+}
+.contacto__container .contacto__container--info .contacto__insta--logo {
+  display: inline-flex;
+}
+
+/*------------------- REGISTRO -------------------------------*/
+.registro_container {
+  margin-bottom: 80px;
+}
+
+/* -----------------------PROXIMAMENTE ------------------------------------------*/
+.proximamente_container {
+  background-image: radial-gradient(circle, rgb(190, 190, 190), rgb(59, 58, 58));
+  padding-bottom: 70px;
+  padding-top: 20px;
+  text-align: center;
+}
+.proximamente_container .proximamente_elementos {
+  margin-top: 25px;
+}
+.proximamente_container .proximamente_elementos .proximamente_title {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.proximamente_container .proximamente_elementos .proximamente_paragraph {
+  margin-top: 20px;
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+}
+.proximamente_container .proximamente_elementos .proximamente_foto {
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+.proximamente_container .proximamente_elementos .proximamente_foto .proximamente_img {
+  width: 20%;
+  border-radius: 100px;
+  border: black solid 5px;
+}
+
+/* -----------------------ERROR 404 ------------------------------------------*/
+.error__container {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  grid-template-areas: "texto img";
+  text-align: center;
+  margin-top: 80px;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(209, 207, 207));
+  padding-bottom: 130px;
+}
+.error__container h1 {
+  font-size: 90px;
+  margin-left: 40px;
+}
+.error__container p {
+  font-size: 40px;
+  margin-left: 40px;
+}
+.error__container .error__img {
+  width: 50%;
+  border-radius: 50px;
+  border: black solid 4px;
+}
+
+/* ------------------ MEDIA QUERIES --------------------------------------------------------*/
+/*-------------TABLET!!!!!! ----------------------------------*/
+@media (max-width: 992px) {
+  .pages__header--container .header__logo--img {
+    border-radius: 50px;
+    margin: 5px 0 5px 30px;
+    width: 33px;
+    animation-name: logo__tablet;
+  }
+  /* INDEX */
+  .bada__container, .roxe__container, .a2__container {
+    display: block;
+  }
+  .bada__container .bada__info, .roxe__container .bada__info, .a2__container .bada__info, .roxe__container .roxe__info, .a2__container .a2__info {
+    width: 55%;
+  }
+  .bada__container .bada__flecha--img, .roxe__container .bada__flecha--img, .a2__container .bada__flecha--img {
+    display: none;
+  }
+  .bada__container .bada__media, .roxe__container .bada__media, .a2__container .bada__media {
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    width: 70%;
+  }
+  .roxe__container {
+    display: block;
+  }
+  .roxe__container .roxe__info {
+    margin-top: 40px;
+  }
+  .roxe__container .roxe__flecha--img {
+    display: none;
+  }
+  .roxe__container .roxe__media {
+    margin: auto;
+    text-align: center;
+    width: 55%;
+  }
+  .a2__container {
+    display: block;
+  }
+  .a2__container .a2__flecha--img {
+    display: none;
+  }
+  .a2__container .a2__media {
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    width: 60%;
+  }
+  .tipos__container .tipos__encargos {
+    display: block;
+  }
+  .tipos__container .tipos__encargos .tipos__info {
+    width: 70%;
+  }
+  .tipos__container .tipos__encargos .tipos__info .tipos__info--img {
+    width: 50%;
+  }
+  #tipos__info--realizadas {
+    margin-bottom: 40px;
+  }
+  .faqs__container .faqs__questions--add {
+    height: 180px;
+  }
+  /* ACERCA DE MI */
+  .bio__container {
+    display: block;
+  }
+  .bio__container .bio__container--texto {
+    margin: 0 40px 50px 40px;
+  }
+  /* ENCARGOS */
+  .calculo__form .calculo__form--datos {
+    display: block;
+    text-align: center;
+  }
+  .calculo__form .calculo__form--datos .label__tamano {
+    display: block;
+  }
+  .calculo__form .calculo__form--datos .label__sentido {
+    display: block;
+    margin-top: 20px;
+  }
+  .calculo__form .calculo__form--datos .label__bastidor {
+    display: block;
+  }
+  .calculo__form .calculo__form--datos .label__diseno {
+    display: block;
+  }
+  .calculo__form .calculo__form--datos #sentido {
+    margin-left: 30px;
+  }
+  .calculo__form .calculo__form--datos #diseno {
+    margin-left: 40px;
+  }
+  .calculo__form .calculo__form--datos .calculo__label {
+    display: block;
+  }
+  /* CONTACTO */
+  .contacto__container {
+    display: block;
+  }
+  .contacto__container .contacto__container--info {
+    margin: auto;
+    text-align: center;
+  }
+  .contacto__container .contacto__mapa {
+    max-width: 400px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .contacto__container .contacto__form {
+    margin: auto;
+    margin-top: 40px;
+  }
+  /* FOOTER */
+  .footer__container .footer__info {
+    display: block;
+  }
+  .footer__container .footer__info .nav__footer--items {
+    justify-content: center;
+    gap: 2em;
+  }
+  .footer__container .footer__info .footer__encontrame {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  /* 404 */
+  .error__container {
+    display: block;
+  }
+}
+/*------------ MOBILE!!!!!! ----------------------------------*/
+@media (max-width: 767px) {
+  /*HEADER */
+  .main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.2s linear;
+    background-color: rgba(8, 8, 8, 0.7);
+    z-index: 100;
+  }
+  .main-nav .nav-links {
+    background-color: rgb(124, 123, 123);
+    color: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .main-nav .nav-links .link-item {
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+  }
+  .main-nav .nav-links .link-item::after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    transition: 0.3s ease all;
+  }
+  .main-nav .nav-links .link-item:hover::after {
+    width: 100%;
+  }
+  .main-nav.show {
+    margin-left: 100px;
+  }
+  .button-menu {
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    justify-self: flex-end;
+    margin-right: 40px;
+  }
+  .button-menu span {
+    width: 37px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #faf8f8;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    transition: all 0.2s linear;
+  }
+  .button-menu.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #ffffff;
+  }
+  .button-menu.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(-8px, 5px);
+  }
+  .button-menu.close span:nth-child(3) {
+    display: none;
+  }
+  .pages__header--container .header__logo--img {
+    border-radius: none;
+    margin: 5px 0 5px 200px;
+    width: 100px;
+    animation-name: logo__mobile;
+  }
+  /* INDEX */
+  .bada__container, .roxe__container, .a2__container {
+    display: block;
+  }
+  .bada__container .bada__flecha--img, .roxe__container .bada__flecha--img, .a2__container .bada__flecha--img {
+    display: none;
+  }
+  .bada__container .bada__media, .roxe__container .bada__media, .a2__container .bada__media {
+    margin: auto;
+    margin-top: 40px;
+    width: 70%;
+  }
+  .roxe__container {
+    display: block;
+  }
+  .roxe__container .roxe__info {
+    margin-top: 40px;
+  }
+  .roxe__container .roxe__flecha--img {
+    display: none;
+  }
+  .roxe__container .roxe__media {
+    margin: auto;
+    width: 55%;
+  }
+  .a2__container {
+    display: block;
+  }
+  .a2__container .a2__flecha--img {
+    display: none;
+  }
+  .a2__container .a2__media {
+    margin: auto;
+    margin-top: 40px;
+    width: 60%;
+  }
+  .tipos__container .tipos__encargos {
+    display: block;
+  }
+  .tipos__container .tipos__info--img {
+    width: 50%;
+  }
+  .faqs__container .faqs__questions--add {
+    height: 290px;
+  }
+  /* ACERCA DE MI */
+  .bio__container {
+    display: block;
+  }
+  .bio__container .bio__container--texto {
+    margin: 0 40px 50px 40px;
+  }
+  /* ENCARGOS */
+  .calculo__form .calculo__form--datos {
+    display: block;
+    text-align: center;
+  }
+  .calculo__form .label__tamano {
+    display: block;
+  }
+  .calculo__form .label__sentido {
+    display: block;
+    margin-top: 20px;
+  }
+  .calculo__form .label__bastidor {
+    display: block;
+    margin-top: 0;
+  }
+  .calculo__form .label__diseno {
+    display: block;
+  }
+  .calculo__form .calculo__label {
+    display: block;
+  }
+  /* CONTACTO */
+  .contacto__container {
+    display: block;
+  }
+  .contacto__container .contacto__container--info {
+    margin: auto;
+    text-align: center;
+  }
+  .contacto__container .contacto__container--info .contacto__mapa {
+    max-width: 300px;
+    margin-top: 20px;
+  }
+  .contacto__container .contacto__form {
+    margin: auto;
+    margin-top: 60px;
+  }
+  /* FOOTER */
+  .footer__container .footer__info {
+    display: block;
+  }
+  .footer__container .footer__info .nav__footer {
+    text-align: center;
+  }
+  .footer__container .footer__info .footer__title {
+    text-align: start;
+    margin-bottom: 20px;
+  }
+  .footer__container .footer__info .nav__footer--items {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 40px;
+    padding-left: 0;
+  }
+  .footer__container .footer__encontrame {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+}
+/*test*/
+
+/*# sourceMappingURL=main.css.map */
